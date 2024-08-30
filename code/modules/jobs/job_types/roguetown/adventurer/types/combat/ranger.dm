@@ -90,7 +90,7 @@
 			H.change_stat("perception", 2)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 3)
-		
+
 	if(H.gender == MALE)
 		pants = /obj/item/clothing/under/roguetown/trou/leather
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
@@ -107,6 +107,9 @@
 			H.mind.adjust_skillrank(/datum/skill/magic/holy, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/tracking, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, max((2 - H.mind.get_skill_level(/datum/skill/combat/swords)), 0), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, max((2 - H.mind.get_skill_level(/datum/skill/combat/knives)), 0), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/sneaking, max((1- H.mind.get_skill_level(/datum/skill/combat/sneaking)), 0), TRUE)
 		ADD_TRAIT(H, TRAIT_SEEDKNOW, TRAIT_GENERIC)		
 		else
 	
