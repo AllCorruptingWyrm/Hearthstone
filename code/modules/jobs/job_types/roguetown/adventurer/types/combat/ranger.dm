@@ -99,6 +99,9 @@
 		if(prob(50))
 			pants = /obj/item/clothing/under/roguetown/tights/black
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless
+	switch(H.patron.name)
+		if("Dendor")
+			wrists = /obj/item/clothing/neck/roguetown/psicross/dendor
 	if(/datum/patron/divine/dendor) // Warrior of the Glades
 			if(H.mind)
 				H.mind.adjust_skillrank(/datum/skill/magic/holy, 3, TRUE)
