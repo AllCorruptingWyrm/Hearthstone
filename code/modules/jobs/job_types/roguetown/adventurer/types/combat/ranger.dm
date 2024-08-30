@@ -103,10 +103,11 @@
 		if("Dendor")
 			wrists = /obj/item/clothing/neck/roguetown/psicross/dendor
 	if(/datum/patron/divine/dendor) // Warrior of the Glades
-			if(H.mind)
-				H.mind.adjust_skillrank(/datum/skill/magic/holy, 3, TRUE)
-				H.mind.adjust_skillrank(/datum/skill/misc/tracking, 2, TRUE)
-				H.mind.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)
+		if(H.mind)
+			H.mind.adjust_skillrank(/datum/skill/magic/holy, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/tracking, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)
+		ADD_TRAIT(H, TRAIT_SEEDKNOW, TRAIT_GENERIC)		
 		else
 	
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
