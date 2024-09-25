@@ -84,13 +84,13 @@
 					tris2take += -2
 				if(real_name in GLOB.outlawed_players)
 					yeae = FALSE
-
+/*
 		if(get_triumphs() > 0)
 			if(tris2take)
 				adjust_triumphs(tris2take)
 			else
 				adjust_triumphs(-1)
-
+*/
 		switch(job)
 			if("King")
 				//omen gets added separately, after a few minutes
@@ -103,7 +103,7 @@
 //			if(mind)
 //				if((mind.assigned_role == "Lord") || (mind.assigned_role == "Priest") || (mind.assigned_role == "Guard Captain") || (mind.assigned_role == "Merchant"))
 //					addomen(OMEN_NOBLEDEATH)
-
+/*
 		if(!gibbed && yeae)
 			for(var/mob/living/carbon/human/HU in viewers(7, src))
 				if(HU.marriedto == src)
@@ -122,7 +122,7 @@
 
 	dizziness = 0
 	jitteriness = 0
-
+*/ 
 	if(ismecha(loc))
 		var/obj/mecha/M = loc
 		if(M.occupant == src)
@@ -151,8 +151,8 @@
 		if(CA != src && !HAS_TRAIT(CA, TRAIT_BLIND))
 			if(HAS_TRAIT(CA, TRAIT_STEELHEARTED))
 				continue
-			if(CA.marriedto == src)
-				CA.adjust_triumphs(-1)
+			/* if(CA.marriedto == src)
+				CA.adjust_triumphs(-1) */
 			var/mob/living/carbon/V = CA
 			if(V.has_flaw(/datum/charflaw/addiction/maniac))
 				V.add_stress(/datum/stressevent/viewgibmaniac)
