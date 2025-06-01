@@ -165,7 +165,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/aalloy
 	neck = /obj/item/clothing/neck/roguetown/gorget/paalloy
 	gloves = /obj/item/clothing/gloves/roguetown/chain/paalloy
-	r_hand = /obj/item/rogueweapon/spear/aalloy
+	l_hand = /obj/item/rogueweapon/spear/aalloy
 
 	H.STASTR = 12
 	H.STASPD = 8
@@ -195,7 +195,6 @@
 
 	H.possible_rmb_intents = list(/datum/rmb_intent/feint,\
 	/datum/rmb_intent/aimed,\
-	/datum/rmb_intent/strong,\
 	/datum/rmb_intent/riposte,\
 	/datum/rmb_intent/weak)
 	H.swap_rmb_intent(num=1) //dont want to mess with base NPCs too much out of fear of breaking them so I assigned the intents in the outfit
