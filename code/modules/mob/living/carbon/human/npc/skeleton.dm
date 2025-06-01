@@ -159,13 +159,12 @@
 
 /datum/outfit/job/roguetown/greater_skeleton/pre_equip(mob/living/carbon/human/H) //equipped onto Summon Greater Undead player skeletons only after the mind is added
 	..()
-	cloak = /obj/item/clothing/cloak/stabard/surcoat/guard // lifted MAA loadout
-	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/aalloy
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/aalloy
-	pants = /obj/item/clothing/under/roguetown/platelegs/aalloy
-	shoes = /obj/item/clothing/shoes/roguetown/boots/aalloy
-	neck = /obj/item/clothing/neck/roguetown/gorget/aalloy
-	gloves = /obj/item/clothing/gloves/roguetown/chain/aalloy
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/paalloy
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/paalloy
+	pants = /obj/item/clothing/under/roguetown/platelegs/paalloy
+	shoes = /obj/item/clothing/shoes/roguetown/boots/paalloy
+	neck = /obj/item/clothing/neck/roguetown/gorget/paalloy
+	gloves = /obj/item/clothing/gloves/roguetown/chain/paalloy
 	r_hand = /obj/item/rogueweapon/spear/aalloy
 
 	H.STASTR = 12
