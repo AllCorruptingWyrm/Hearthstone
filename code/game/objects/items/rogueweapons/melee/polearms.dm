@@ -1014,7 +1014,7 @@
 	force_wielded = 20
 	gripped_intents = list(/datum/intent/spear/bash/ranged/quarterstaff, /datum/intent/spear/thrust/quarterstaff)
 	icon_state = "quarterstaff"
-	max_integrity = 300
+	max_integrity = 150
 
 /obj/item/rogueweapon/woodstaff/quarterstaff/iron
 	name = "iron quarterstaff"
@@ -1023,9 +1023,9 @@
 	force_wielded = 22
 	gripped_intents = list(/datum/intent/spear/bash/ranged/quarterstaff, /datum/intent/spear/thrust/quarterstaff)
 	icon_state = "quarterstaff_iron"
-	max_integrity = 300
+	max_integrity = 200
 	blade_dulling = DULLING_SHAFT_REINFORCED
-	intdamage_factor = 1.2
+	intdamage_factor = 1.1
 
 /obj/item/rogueweapon/woodstaff/quarterstaff/steel
 	name = "steel quarterstaff"
@@ -1034,9 +1034,9 @@
 	force_wielded = 25
 	gripped_intents = list(/datum/intent/spear/bash/ranged/quarterstaff, /datum/intent/spear/thrust/quarterstaff)
 	icon_state = "quarterstaff_steel"
-	max_integrity = 400
+	max_integrity = 300 // higher integ
 	blade_dulling = DULLING_SHAFT_REINFORCED
-	intdamage_factor = 1.2
+	intdamage_factor = 1.1
 
 /obj/item/rogueweapon/spear/partizan
 	name = "partizan"
